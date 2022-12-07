@@ -1,6 +1,10 @@
-const button = document.getElementById("button");
-const container = document.getElementById("container");
-
+function getInput() {
+  let size = prompt("Size (Less than 100): ", "");
+  while (size >= 100) {
+    size = prompt("Size (Less than 100): ", "");
+  }
+  createGrid(size);
+}
 function createGrid(size) {
   for (let i = 0; i < size; i++) {
     let row = document.createElement("div");
@@ -23,3 +27,8 @@ function createGrid(size) {
     container.appendChild(row);
   }
 }
+
+const button = document.getElementById("button");
+const container = document.getElementById("container");
+
+button.addEventListener("click", getInput);
