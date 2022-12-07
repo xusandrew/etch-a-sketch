@@ -3,6 +3,7 @@ function getInput() {
   while (size >= 100) {
     size = prompt("Size (Less than 100): ", "");
   }
+  container.innerHTML = "";
   createGrid(size);
 }
 
