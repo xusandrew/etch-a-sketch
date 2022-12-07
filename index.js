@@ -5,6 +5,7 @@ function getInput() {
   }
   createGrid(size);
 }
+
 function createGrid(size) {
   for (let i = 0; i < size; i++) {
     let row = document.createElement("div");
