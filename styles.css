@@ -20,3 +20,7 @@ h1 {
   width: 6.25%;
   aspect-ratio: 1 / 1;
 }
+
+.hover {
+    background-color: red;
+}

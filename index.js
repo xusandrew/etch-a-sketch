@@ -7,8 +7,16 @@ for (let i = 0; i < 16; i++){
     for (let j = 0; j < 16; j++){
         let block = document.createElement("div");
         block.classList.add("block");
+
+        block.addEventListener("mouseover", (e) => {
+            block.classList.add("hover");
+        });
+
+        block.addEventListener("mouseout", (e) => {
+            block.classList.remove("hover");
+        });
+
         row.appendChild(block);
     }
-
     container.appendChild(row);
 }
